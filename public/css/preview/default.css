@@ -1,0 +1,87 @@
+.media_meta_text {
+    color: #8c8c8c;
+}
+
+.media_meta {
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.link {
+    color:#607fa6;
+    text-decoration: none;
+}
+
+.main-content {
+    margin: 10px auto;
+    width: 700px;
+    padding:20px;
+}
+
+.title {
+    border-bottom: 1px solid #e7e7eb;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+.top-info {
+    font-size:16px;
+    font-weight:bold;
+    font-family: "微软雅黑";
+    color:#666;
+    line-height:26px;
+    margin:20px auto;
+}
+
+.content-main {
+    position: relative;
+    min-height: 350px;
+    color: #3e3e3e;
+    overflow: hidden;
+}
+
+.content-main p {
+    clear: both;
+    min-height: 1em;
+}
+.content-main * {
+    box-sizing: border-box !important;
+    max-width: 100% !important;
+    overflow-wrap: break-word !important;
+}
+
+#content .dashang{
+
+}
+
+#content .dashang img{
+
+
+}
+
+#content .guanzhu{
+
+}
+
+#content .guanzhu span{
+    position:absolute;
+    top:18px;
+    left:40px;
+    color:#666;
+    text-align:justify;
+    font-weight:bold;
+    font-size:18px;
+}
+
+#content .guanzhu img{
+    width:32px;
+    height:64px
+}

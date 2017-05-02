@@ -1,0 +1,360 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+
+body{
+    margin: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.warning-border{
+    border: 1px solid #d43a00;
+}
+
+.warning-border:focus{
+    border: 1px solid #d43a00;
+}
+
+.weibo-form{
+    width: 80%;
+    max-width: 800px;
+    min-width:500px;
+    margin: 0px auto;
+}
+
+.weibo-form textarea{
+    width: 100%;
+    height: 120px;
+
+    resize: vertical;
+}
+
+.weibo-form .form-body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.weibo-form .note{
+    margin: 5px 0px;
+    color: #838287;
+    font-size: 12px;
+}
+
+.weibo-form .note span{
+    color: #ea2200;
+    font-size: 12px;
+}
+
+.p-weibo-auth{
+    margin: 80px 0px;
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* wechat */
+
+/* wechat list*/
+
+.p-wechat-news-list{
+    width: 1000px;
+}
+
+.p-wechat-news-list .main-content{
+    margin: 0 auto;
+}
+
+.news-list{
+    width:297px;
+    margin: 12px;
+    border: 1px solid #e0e0e0;
+    background: #f9f9f9;
+}
+
+.news-title{
+    color:#333;
+    font-weight:normal;
+    border-bottom:solid 1px #e0e0e0;
+    padding:14px;
+    font-size:14px;
+    margin:0;
+}
+
+.news-contents {
+    margin:0;
+}
+
+.news-contents li{
+    border-bottom: solid 1px #e0e0e0;
+    padding:10px 14px;
+}
+
+.news a {
+    color:#222;
+    display:block;
+}
+.news a:hover{
+    background-color:#000;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+    filter:alpha(opacity:0.6);
+}
+
+.news-contents li:nth-child(1){
+    position: relative;
+}
+
+.news-list li:last-child{
+    : none;
+}
+
+
+.news .main-image{
+    width: 267px;
+    height: 145px;
+}
+
+.news .main-title{
+    position: absolute;
+
+    opacity:0.7;
+    filter:alpha(opacity=70);
+
+    top: 106px;
+    padding: 5px;
+
+    color: #fff;
+    background: #3a3a3a;
+
+    width: 267px;
+    height: 48px;
+    line-height: 20px;
+    overflow: hidden;
+
+    font-weight: 100;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.news .side-image{
+    width: 70px;
+    height: 70px;
+}
+
+.news .side-title{
+    width: 180px;
+    height: 70px;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 18px;
+    padding:0;
+}
+
+.content-action a{
+    background:#ddd;
+    color:#666;
+    display:block;
+    width:120px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    float:left;
+    border-right:1px solid #fff;
+    border-left:1px solid #fff;
+}
+.content-action a.del{
+    width:55px;
+}
+.content-action a:hover{
+    color:#222
+}
+
+
+/* wechat news edit*/
+.p-news-edit {
+    width:1000px;
+}
+.p-news-edit .main-content {
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+}
+
+.main-right {
+    border-left: 1px solid #ccc;
+    width: 735px;
+}
+
+.main-left {
+    border-right: 1px solid #ccc;
+    float: left;
+    width: 250px;
+}
+
+.form-group .input-message{
+    padding:0;
+    text-align:left;
+    line-height:32px;
+}
+
+.form-group .sp_summary{
+    padding-left:78px;
+}
+
+.content-box {
+    padding: 35px 2px;
+}
+
+.appmsg_preview_container {
+    border-right: 1px solid #e7e7eb;
+    background-color: #f8f8f8;
+}
+
+.appmsg_container_hd {
+    padding: 10px 20px 0;
+}
+
+.appmsg_container_bd {
+    padding: 20px;
+}
+
+
+.appmsg_container_title {
+    font-weight: bold;
+}
+
+.appmsg_preview_container .appmsg_add {
+    margin: 0;
+    line-height: 90px;
+}
+
+
+.appmsg_add {
+    margin: 20px 14px;
+}
+
+.create_access_primary {
+    display: block;
+    border: 2px dotted #d9dadc;
+    line-height: 60px;
+    font-size: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    width:100%;
+}
+
+.thumb input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+
+.main-left ul {
+
+}
+
+.main-left li {
+    list-style-type: none;
+}
+
+.content-list {
+    padding: 10px;
+}
+
+.content-list ul{
+    width:100%;
+    padding:10px;
+}
+
+.media-first, .medias {
+    border:1px solid #e7e7eb;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.media-first img{
+    width: 100%;
+    height: 120px;
+}
+.media-first .title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    filter: Alpha(opacity=50);
+}
+
+.title p {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.box-footer {
+    float:right;
+}
+.box-footer button{
+    float:left;
+    margin:0 10px;
+}
+
+.on{
+    border: 2px solid #43B548;
+}
+
+.error{
+    color: #ea2200;
+}
+
+.info{
+    color: #333;
+}
+
+.bd{
+    border: 1px solid #f00;
+}
+
+.delete{
+    color:#eee;
+    display: block;
+    font-size: 14px;
+    cursor: pointer;
+    height: 30px;
+    line-height: 30px;
+    margin-top:5px;
+}
+
+.delete:hover{
+    color:#fff;
+}
