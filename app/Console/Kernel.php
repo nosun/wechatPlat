@@ -14,6 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\DownloadWechatNews::class,
+        Commands\BatchInsertWechatSite::class,
+        Commands\DealData::class,
     ];
 
     /**

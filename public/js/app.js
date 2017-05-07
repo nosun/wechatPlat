@@ -35,34 +35,3 @@ cwjs.wechatEdit={
     }
 
 };
-
-cwjs.config={
-    appUrl : '//www.cwzg.cn/'
-};
-
-$(function () {
-    setTimeout(function () {
-        /**
-         * @param {element} el  Feature detection
-         * @param {function} fn  Executive function
-         */
-        function init(el,fn){
-            if($(el).length && (typeof fn) === 'function') fn(el);
-        }
-
-        init('.check-length', cwjs.wechatEdit.init);
-
-    },1);
-
-    var $conform = $('.js-confirm');
-    if($conform.length){
-        $conform.on('click', function(e){
-            if(confirm('你确定要删除么？')){
-                return true;
-            }else{
-                e.preventDefault();
-                return false;
-            }
-        });
-    }
-});

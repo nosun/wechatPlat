@@ -11,6 +11,19 @@
 |
 */
 
+Route::get('/', "ArticleController@index");
+Route::get('/404.html', "PageController@page404");
+
+// article
 Route::get('/articles', "ArticleController@index");
 Route::post('/articles', "ArticleController@index");
 Route::get('/article/{id}', "ArticleController@show");
+Route::post('/article/{id}', "ArticleController@updateArticle");
+
+// site
+Route::get('/sites', "WechatSiteController@index");
+Route::get('/site/{id}', "WechatSiteController@show");
+
+// tool
+
+Route::get('editor',"WechatToolsController@editor");

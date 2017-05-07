@@ -1,10 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <div class="content container">
-        <div class="page-header">
-            <h2>微信文章平台</h2>
-        </div>
+    <div class="content">
         <div class="search row" style="margin-bottom:20px;">
             <form class="form-inline" name="search-form" role="form" action="/articles" method="post">
                 {{csrf_field()}}
@@ -47,6 +44,7 @@
                     <th width="10%">作者</th>
                     <th width="10%">时间</th>
                     <th width="10%">原创</th>
+                    <th width="10%">原文</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -56,13 +54,16 @@
                             <a href="{{url('/article/'.$article->id)}}" target="_blank">{{$article->title}}</a>
                         </td>
                         <td>
-                            {{ $article->author }}
+                            <a href="/articles?key=author&keywords={{ $article->author }}&page=1"> {{ $article->author }}</a>
                         </td>
                         <td>
                             {{ $article->date }}
                         </td>
                         <td>
                             {{ $article->origin == 0 ? "非原创" : "原创" }}
+                        </td>
+                        <td>
+                            <a href="{{ $article->url }}" target="_blank"> 原文 </a>
                         </td>
                     </tr>
                 @endforeach
@@ -73,12 +74,6 @@
 
         <div class="bottom row page">
             {{$page->render()}}
-        </div>
-
-        <div class="authors">
-            @foreach($authors as $row)
-                    {{ $row->author }},
-            @endforeach
         </div>
     </div>
 
