@@ -11,8 +11,8 @@
                 <div class="form-group">
                     <select class="form-control" name="origin">
                         <option value="-1" >原创选择</option>
-                        <option value="原创" @if(isset($option['origin']) && $option['origin'] == "原创") selected @endif >原创</option>
-                        <option value="非原创" @if(isset($option['origin']) && $option['origin'] == "非原创") selected @endif >非原创</option>
+                        <option value="1" @if(isset($option['origin']) && $option['origin'] == "1") selected @endif >原创</option>
+                        <option value="0" @if(isset($option['origin']) && $option['origin'] == "0") selected @endif >非原创</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -62,7 +62,7 @@
                             {{ $article->date }}
                         </td>
                         <td>
-                            {{ $article->origin }}
+                            {{ $article->origin == 0 ? "非原创" : "原创" }}
                         </td>
                     </tr>
                 @endforeach
