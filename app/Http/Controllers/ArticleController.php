@@ -83,9 +83,6 @@ class ArticleController extends Controller
 
         foreach($ps as $p){
             $p->removeAttribute('style');
-            if(trim($p->innertext()) == ''){
-                $p->clear();
-            }
         }
 
         $videos = $dom->find('.video_iframe');
