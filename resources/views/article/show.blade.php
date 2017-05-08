@@ -26,7 +26,7 @@
                     <a href="/articles?key=author&keywords={{ $article->author }}&page=1"> {{ $article->author }} </a>
                 </div>
                 <div class="status col-lg-4" style="color:orangered">
-                    {{ $article->status == 0 ? "已删除" : "正常" }} |
+                    {{ $article->status < 0 ? "已删除" : "正常" }} |
                     @if($article->used == 1)
                         待用
                     @elseif($article->used == -1)
