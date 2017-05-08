@@ -79,11 +79,14 @@ class ArticleController extends Controller
             $image->clear();
         }
 
-//        $ps = $dom->find('p');
-//
-//        foreach($ps as $p){
-//            $p->removeAttribute('style');
-//        }
+        $ps = $dom->find('p');
+
+        foreach($ps as $p){
+            $p->removeAttribute('style');
+            if(trim($p->innertext()) == ''){
+                $p->clear();
+            }
+        }
 
         $videos = $dom->find('.video_iframe');
         foreach($videos as $video){

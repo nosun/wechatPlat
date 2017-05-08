@@ -11,7 +11,6 @@
         p {
             font-size:16px;
             line-height:22px;
-            height:22px;
         }
         .content .action{
             float:left;
